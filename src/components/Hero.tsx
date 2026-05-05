@@ -3,14 +3,24 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Mail, Phone, MapPin, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        setIsMobile(window.innerWidth <= 768);
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     return (
         <section id="home" className="min-h-screen flex items-center justify-center relative bg-gray-950 overflow-hidden">
             {/* Background gradient for shining black effect */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black opacity-80"></div>
 
             {/* Optimized background circles - fewer, larger, slower */}
+            {!isMobile && (
             <div className="absolute inset-0 overflow-hidden">
                 {/* Ultra-large cyan circle - top left */}
                 <motion.div
@@ -79,6 +89,7 @@ export default function Hero() {
                     style={{ willChange: 'transform' }}
                 />
             </div>
+            )}
 
             {/* Subtle gradient overlay */}
             <div className="absolute inset-0 opacity-30">
@@ -186,7 +197,7 @@ export default function Hero() {
                         <div className="relative w-72 h-72">
                             {/* Animated gradient border */}
                             <motion.div
-                                animate={{ rotate: 360 }}
+                                animate={{ rotate: isMobile ? 0 : 360 }}
                                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                                 className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-pink-500 to-purple-500 rounded-2xl blur-xl opacity-50"
                             />

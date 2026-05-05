@@ -31,26 +31,31 @@ function FloatingCircles() {
       <style jsx global>{`
         @keyframes float-up {
           0% {
-            transform: translate3d(0, 0, 0);
+            transform: translate(0, 0);
           }
           50% {
-            transform: translate3d(var(--drift), -50vh, 0);
+            transform: translate(var(--drift), -50vh);
           }
           100% {
-            transform: translate3d(0, -100vh, 0);
+            transform: translate(0, -100vh);
           }
         }
         .bubble {
           animation: float-up var(--duration) linear infinite;
           animation-delay: var(--delay);
-          will-change: transform;
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+          .bubble {
+            animation-duration: calc(var(--duration) * 1.5);
+          }
         }
       `}</style>
       <div
         className="fixed inset-0 pointer-events-none overflow-hidden z-0"
         style={{
-          contain: 'layout style paint',
-          transform: 'translateZ(0)' // Force GPU layer
+          contain: 'layout style paint'
         }}
       >
         {bubbles.map((bubble) => (

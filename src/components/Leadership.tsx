@@ -199,21 +199,21 @@ export default function Leadership() {
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 viewport={{ once: true }}
                             >
-                                <div className="space-y-6">
-                                    <p className="text-lg text-gray-300 leading-relaxed">
+                                <div className="space-y-4 md:space-y-6">
+                                    <p className="text-base md:text-lg text-gray-300 leading-relaxed">
                                         {contribution.description}
                                     </p>
 
-                                    <div className="bg-gradient-to-r from-green-500/10 to-teal-500/10 border border-green-500/30 rounded-lg p-6">
-                                        <p className="text-green-300 font-semibold">Key Impact:</p>
-                                        <p className="text-gray-300 mt-2">
+                                    <div className="bg-gradient-to-r from-green-500/10 to-teal-500/10 border border-green-500/30 rounded-lg p-4 md:p-6">
+                                        <p className="text-green-300 font-semibold text-sm md:text-base">Key Impact:</p>
+                                        <p className="text-gray-300 mt-2 text-sm md:text-base leading-relaxed">
                                             Contributing {contribution.percentage}% of my expertise to ensure excellence in {contribution.title.toLowerCase()}.
                                         </p>
                                     </div>
 
                                     <div className="flex items-center space-x-2">
                                         <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                                        <span className="text-green-400 font-semibold">Active Focus Area</span>
+                                        <span className="text-green-400 font-semibold text-sm md:text-base">Active Focus Area</span>
                                     </div>
                                 </div>
                             </motion.div>

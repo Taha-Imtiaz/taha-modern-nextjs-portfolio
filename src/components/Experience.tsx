@@ -267,7 +267,7 @@ export default function Experience() {
 
                 <div className="relative">
                     {/* Timeline line */}
-                    <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-400 via-purple-400 to-pink-400"></div>
+                    <div className="absolute left-3 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-400 via-purple-400 to-pink-400"></div>
 
                     <div className="space-y-16">
                         {experiences.map((exp, index) => (
@@ -280,12 +280,12 @@ export default function Experience() {
                                 className="relative"
                             >
                                 {/* Timeline dot with pulse effect */}
-                                <div className="absolute left-6 w-6 h-6 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full border-4 border-gray-900 shadow-lg">
+                                <div className="absolute left-1 md:left-6 w-6 h-6 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full border-4 border-gray-900 shadow-lg">
                                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-ping opacity-20"></div>
                                 </div>
 
                                 {/* Experience card */}
-                                <div className="ml-12 md:ml-20">
+                                <div className="ml-7 md:ml-20">
                                     <motion.div
                                         whileHover={{ scale: 1.02, y: -5 }}
                                         transition={{ duration: 0.3 }}

@@ -21,14 +21,15 @@ A modern, responsive portfolio website built with Next.js 16, TypeScript, Framer
 ## � Recent Updates
 
 ### v1.1.0 - Mobile Experience Optimization (May 2026)
+
 - **Mobile Spacing Fixes**: Reduced excessive horizontal margins in career journey timeline
-- **FloatingCircles Enhancement**: 
+- **FloatingCircles Enhancement**:
   - Increased bubble count on mobile (6 bubbles vs 4)
   - Added hardware acceleration with `translate3d()` for better performance
   - Enhanced security with crypto-safe random generation
   - Improved content protection to prevent text blurring
   - Added accessibility attributes and user selection prevention
-- **Responsive Leadership Component**: 
+- **Responsive Leadership Component**:
   - Optimized key impact boxes for mobile devices
   - Improved grid spacing and icon responsiveness
   - Enhanced typography scaling across breakpoints
@@ -74,17 +75,20 @@ src/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Taha-Imtiaz/taha-modern-nextjs-portfolio.git
 cd taha-modern-nextjs-portfolio
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -105,6 +109,7 @@ This project is configured for easy deployment on Vercel:
 1. Connect your GitHub repository to Vercel
 2. Vercel will automatically detect Next.js and deploy
 3. Or deploy manually with Vercel CLI:
+
 ```bash
 npx vercel --prod
 ```
@@ -124,6 +129,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Contact
 
 **Taha Imtiaz**
+
 - Email: taha.imtiaz@paysyslabs.com
 - LinkedIn: [linkedin.com/in/taha-imtiaz](https://linkedin.com/in/taha-imtiaz)
 - GitHub: [github.com/Taha-Imtiaz](https://github.com/Taha-Imtiaz)

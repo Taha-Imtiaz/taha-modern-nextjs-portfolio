@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js 16, TypeScript, Framer
 
 ## 🚀 Live Demo
 
-**Production URL:** [https://myportfolio-15tu39ybi-tahaimtiaz1996gmailcoms-projects.vercel.app](https://myportfolio-15tu39ybi-tahaimtiaz1996gmailcoms-projects.vercel.app)
+**Production URL:** [https://myportfolio-5jfxpp41v-tahaimtiaz1996gmailcoms-projects.vercel.app](https://myportfolio-5jfxpp41v-tahaimtiaz1996gmailcoms-projects.vercel.app)
 
 **Alias URL:** [https://myportfolio-omega-brown-89.vercel.app](https://myportfolio-omega-brown-89.vercel.app)
 

@@ -21,74 +21,74 @@ export default function Hero() {
 
             {/* Optimized background circles - fewer, larger, slower */}
             {!isMobile && (
-            <div className="absolute inset-0 overflow-hidden">
-                {/* Ultra-large cyan circle - top left */}
-                <motion.div
-                    animate={{
-                        x: [0, 80, 0],
-                        y: [0, -60, 0],
-                        scale: [1, 1.3, 1],
-                    }}
-                    transition={{
-                        duration: 60,
-                        repeat: Infinity,
-                        ease: "linear"
-                    }}
-                    className="absolute -top-32 -left-32 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"
-                    style={{ willChange: 'transform' }}
-                />
+                <div className="absolute inset-0 overflow-hidden">
+                    {/* Ultra-large cyan circle - top left */}
+                    <motion.div
+                        animate={{
+                            x: [0, 80, 0],
+                            y: [0, -60, 0],
+                            scale: [1, 1.3, 1],
+                        }}
+                        transition={{
+                            duration: 60,
+                            repeat: Infinity,
+                            ease: "linear"
+                        }}
+                        className="absolute -top-32 -left-32 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"
+                        style={{ willChange: 'transform' }}
+                    />
 
-                {/* Ultra-large pink circle - bottom right */}
-                <motion.div
-                    animate={{
-                        x: [0, -100, 0],
-                        y: [0, 80, 0],
-                        scale: [1, 1.4, 1],
-                    }}
-                    transition={{
-                        duration: 70,
-                        repeat: Infinity,
-                        ease: "linear",
-                        delay: 5
-                    }}
-                    className="absolute -bottom-40 -right-40 w-96 h-96 bg-pink-500/15 rounded-full blur-3xl"
-                    style={{ willChange: 'transform' }}
-                />
+                    {/* Ultra-large pink circle - bottom right */}
+                    <motion.div
+                        animate={{
+                            x: [0, -100, 0],
+                            y: [0, 80, 0],
+                            scale: [1, 1.4, 1],
+                        }}
+                        transition={{
+                            duration: 70,
+                            repeat: Infinity,
+                            ease: "linear",
+                            delay: 5
+                        }}
+                        className="absolute -bottom-40 -right-40 w-96 h-96 bg-pink-500/15 rounded-full blur-3xl"
+                        style={{ willChange: 'transform' }}
+                    />
 
-                {/* Large purple circle - center-left */}
-                <motion.div
-                    animate={{
-                        x: [0, 60, 0],
-                        y: [0, -50, 0],
-                        scale: [1, 1.2, 1],
-                    }}
-                    transition={{
-                        duration: 65,
-                        repeat: Infinity,
-                        ease: "linear",
-                        delay: 10
-                    }}
-                    className="absolute top-1/3 -left-48 w-80 h-80 bg-purple-500/15 rounded-full blur-3xl"
-                    style={{ willChange: 'transform' }}
-                />
+                    {/* Large purple circle - center-left */}
+                    <motion.div
+                        animate={{
+                            x: [0, 60, 0],
+                            y: [0, -50, 0],
+                            scale: [1, 1.2, 1],
+                        }}
+                        transition={{
+                            duration: 65,
+                            repeat: Infinity,
+                            ease: "linear",
+                            delay: 10
+                        }}
+                        className="absolute top-1/3 -left-48 w-80 h-80 bg-purple-500/15 rounded-full blur-3xl"
+                        style={{ willChange: 'transform' }}
+                    />
 
-                {/* Large indigo circle - top right */}
-                <motion.div
-                    animate={{
-                        x: [0, -70, 0],
-                        y: [0, 60, 0],
-                        scale: [1, 1.25, 1],
-                    }}
-                    transition={{
-                        duration: 75,
-                        repeat: Infinity,
-                        ease: "linear",
-                        delay: 15
-                    }}
-                    className="absolute top-1/4 -right-36 w-72 h-72 bg-indigo-500/18 rounded-full blur-3xl"
-                    style={{ willChange: 'transform' }}
-                />
-            </div>
+                    {/* Large indigo circle - top right */}
+                    <motion.div
+                        animate={{
+                            x: [0, -70, 0],
+                            y: [0, 60, 0],
+                            scale: [1, 1.25, 1],
+                        }}
+                        transition={{
+                            duration: 75,
+                            repeat: Infinity,
+                            ease: "linear",
+                            delay: 15
+                        }}
+                        className="absolute top-1/4 -right-36 w-72 h-72 bg-indigo-500/18 rounded-full blur-3xl"
+                        style={{ willChange: 'transform' }}
+                    />
+                </div>
             )}
 
             {/* Subtle gradient overlay */}

@@ -285,7 +285,7 @@ export default function Experience() {
                                 </div>
 
                                 {/* Experience card */}
-                                <div className="ml-20">
+                                <div className="ml-12 md:ml-20">
                                     <motion.div
                                         whileHover={{ scale: 1.02, y: -5 }}
                                         transition={{ duration: 0.3 }}

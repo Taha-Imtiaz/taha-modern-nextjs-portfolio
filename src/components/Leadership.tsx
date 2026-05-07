@@ -157,23 +157,23 @@ export default function Leadership() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
-                            className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}
+                            className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}
                         >
                             {/* Left side - Icon and stats */}
                             <motion.div
                                 className={index % 2 === 1 ? 'md:order-2' : ''}
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <div className="bg-gray-800/50 backdrop-blur-sm p-12 rounded-xl shadow-2xl hover:shadow-green-500/10 transition-all duration-300 border border-gray-700/50">
-                                    <div className="flex items-center mb-8">
-                                        <div className="flex-shrink-0 w-20 h-20 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl flex items-center justify-center text-white mr-6 shadow-lg">
+                                <div className="bg-gray-800/50 backdrop-blur-sm p-6 md:p-12 rounded-xl shadow-2xl hover:shadow-green-500/10 transition-all duration-300 border border-gray-700/50">
+                                    <div className="flex items-center mb-6 md:mb-8">
+                                        <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl flex items-center justify-center text-white mr-4 md:mr-6 shadow-lg">
                                             {contribution.icon}
                                         </div>
                                         <div>
-                                            <h3 className="text-2xl font-semibold text-white">
+                                            <h3 className="text-xl md:text-2xl font-semibold text-white">
                                                 {contribution.title}
                                             </h3>
-                                            <div className="text-3xl font-bold text-green-400 mt-2">
+                                            <div className="text-2xl md:text-3xl font-bold text-green-400 mt-1 md:mt-2">
                                                 {contribution.percentage}%
                                             </div>
                                         </div>
@@ -199,21 +199,21 @@ export default function Leadership() {
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 viewport={{ once: true }}
                             >
-                                <div className="space-y-4 md:space-y-6">
-                                    <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                                <div className="space-y-3 md:space-y-4 md:space-y-6">
+                                    <p className="text-sm md:text-base md:text-lg text-gray-300 leading-relaxed">
                                         {contribution.description}
                                     </p>
 
-                                    <div className="bg-gradient-to-r from-green-500/10 to-teal-500/10 border border-green-500/30 rounded-lg p-4 md:p-6">
-                                        <p className="text-green-300 font-semibold text-sm md:text-base">Key Impact:</p>
-                                        <p className="text-gray-300 mt-2 text-sm md:text-base leading-relaxed">
+                                    <div className="bg-gradient-to-r from-green-500/10 to-teal-500/10 border border-green-500/30 rounded-lg p-3 md:p-4 md:p-6">
+                                        <p className="text-green-300 font-semibold text-xs md:text-sm md:text-base">Key Impact:</p>
+                                        <p className="text-gray-300 mt-1 md:mt-2 text-xs md:text-sm md:text-base leading-relaxed">
                                             Contributing {contribution.percentage}% of my expertise to ensure excellence in {contribution.title.toLowerCase()}.
                                         </p>
                                     </div>
 
                                     <div className="flex items-center space-x-2">
                                         <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                                        <span className="text-green-400 font-semibold text-sm md:text-base">Active Focus Area</span>
+                                        <span className="text-green-400 font-semibold text-xs md:text-sm md:text-base">Active Focus Area</span>
                                     </div>
                                 </div>
                             </motion.div>
